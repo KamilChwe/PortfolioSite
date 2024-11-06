@@ -1,0 +1,66 @@
+/*
+Colour Pallete #1
+
+--raisin-black: #32292fff;
+--davys-gray: #575366ff;
+--glaucous: #6E7dab;
+--savoy-blue: #5762d5ff;
+--mint-green: #d1e3ddff;
+
+*/
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #32292fff;
+}
+
+div {
+    background-color: #575366ff;
+    border-radius: 15px
+}
+
+p {
+    text-align: center;
+    color: #d1e3ddff;
+}
+
+/* Sticky Top Nav Bar */
+#stickybar {
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#stickybar a {
+    float: left;
+    color: #d1e3ddff; 
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#stickybar a:hover {
+    background-color: #6E7dab;
+}
+
+#stickybar a.active {
+    background-color: #5762d5ff;
+}
+
+/* Text Styles */
+.titletext {
+    font-size: 42px;
+}
+
+.subtext {
+    font-size: 26px;
+}
+
+.maintext {
+    font-size: 20px;
+    padding: 14px 16px;
+}
