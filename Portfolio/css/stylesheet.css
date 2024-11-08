@@ -9,6 +9,7 @@ Colour Pallete #1
 
 */
 
+/* Defaults */
 body {
     font-family: "Poppins", sans-serif;
     background-color: #32292fff;
@@ -16,18 +17,13 @@ body {
 
 div {
     background-color: #575366ff;
-    border-radius: 15px
+    border-radius: 15px;
+    text-align: center;
 }
 
 p {
-    text-align: center;
     color: #d1e3ddff;
-}
-
-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
 }
 
 /* Sticky Top Nav Bar */
@@ -68,16 +64,14 @@ img {
 
 .maintext {
     font-size: 20px;
-    padding: 14px 16px;
-}
-
-/* Animated */
-.atitletext {
-    font-size: 42px;
-    animation: slidedown 2.5s
+    margin-bottom: 2%;
 }
 
 /* Animations */
+.slidedown {
+    font-size: 42px;
+    animation: slidedown 2.5s
+}
 @keyframes slidedown {
     from{
         margin-top:-100%;
