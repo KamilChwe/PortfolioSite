@@ -1,3 +1,4 @@
+// Scroll to Top Functionality
 let scrollButton = document.getElementById("scrollButton");
 
 window.onscroll = function(){
