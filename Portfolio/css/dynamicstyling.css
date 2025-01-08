@@ -1,0 +1,132 @@
+/*
+    Colour Palette
+    Background: #071013
+    Div Background: #152f38
+    Text: #E9E9E9
+    Highlights: #9223c6
+    Subtext: #B8B8B8
+*/
+
+/* Defaults */
+body {
+    background-color: #071013;
+    /* Set the default font to be "Roboto" Medium 500 Platinum*/
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 26px;
+    color: #E9E9E9;
+    overflow: hidden;
+}
+
+div{
+    background-color: #152f38;
+    border-radius: 8px;
+    margin: 8px;
+}
+
+/* Text Styling */
+.nameHighlight {
+    font-size: 64px;
+    margin: 0;    
+    color: #9223c6;
+}
+
+.highlighted{
+    color: #9223c6;
+}
+
+.subtext{
+    font-weight: 400;
+    font-style: italic;
+    font-size:20px;
+    margin: 4px;
+    color: #B8B8B8;
+}
+
+/* Div Styling */
+/* Making an exception to inner and nav Divs for background colour*/
+#innerDiv{
+    background-color: #071013;
+}
+#navbar {
+    background-color: #071013;
+}
+#intro {
+    background-color: #071013;
+}
+
+/* Image Styling */
+.logo {
+    width: 64px;
+
+    margin-left: 15%;
+}
+
+/* Navigation Bar Styling */
+/* Desktop Styling */
+@media screen and (min-width:1024px){
+    #navbar {
+        margin-top: 12px;
+        margin-right: 15%;
+        float: right;
+        /* Text Styling */
+        font-weight: 400;
+        font-style: italic;
+        font-size: 24px;
+    }
+    #navbar a {
+        color: #E9E9E9;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+    #navbar a:hover{
+        color: #9223c6;
+    }
+}
+/* Mobile Styling */
+@media screen and (max-width:1000px){
+
+}
+
+/* Inner Div Styling */
+/* Desktop Styling */
+@media screen and (min-width:1024px){
+    #innerDiv{
+        position: fixed;
+        margin-top: 10%;
+        margin-left: 15%;
+    }
+}
+/* Mobile Styling */
+@media screen and (max-width:1000px){
+
+}
+
+/* Animations */
+.slideRight {
+    animation: slideright 1.25s;
+}
+@keyframes slideright {
+    from{
+        margin-left: -200%;
+        left: 300%;
+    }
+    to {
+        margin-left: 0%;
+        left: 100%;
+    }
+}
+.slideLeft {
+    animation: slideleft 1.25s;
+}
+@keyframes slideleft {
+    from{
+        margin-left: 400%;
+        left: 300%;
+    }
+    to {
+        margin-left: 0%;
+        left: 100%;
+    }
+}
