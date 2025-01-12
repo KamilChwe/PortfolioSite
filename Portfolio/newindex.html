@@ -15,27 +15,38 @@
     <body>
         <!-- Navigation Bar Div -->
         <img src="images/logo.png" class="logo">
-        <div id="navbar">
+        <div id="navbar" class="divBackground">
             <a href="#about">About</a>
             <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
         </div>
 
         <!-- Inner Div, contains all main information -->
-        <div id="innerDiv">
-            <div id="intro">
-                <h1 class="nameHighlight slideRight">Kamil Chwedura</h1>
+        <div id="innerDiv" class="divBackground">
+            <div id="intro" class="divBackground">
+                <h1 class="nameText highlighted slideRight">Kamil Chwedura</h1>
                 <h2 class="subtext slideRight">Graduate Software Engineer</h2>
             </div>
-            
+        
             <div id="about">
-                <p>About Me</p>
-                My name is Kamil Chwedura, a 
+                <h1 class="topicText highlighted">About Me</h1>
+                <p>I'm a Software Engineer specialising in backend development.<br>
+                    Started programming in my High School years, creating small automations and bots using Python.
+                </p>
             </div>
 
             <div id="projects">
-                <p>Projects</p>
-                <p></p>
+                <h1 class="topicText highlighted">Projects</h1>
+                <div id="project">
+                    <img src="images/noimage.png" class="projectImage">
+                    <p class="projectTitle">Grocery Guide</p>
+                    <p class="projectDesc">A multi-platform dynamic <br>shopping list developed in NodeJS</p>
+                </div>
+                <div id="project">
+                    <img src="images/noimage.png" class="projectImage">
+                    <p class="projectTitle">ShelfSync</p>
+                    <p class="projectDesc">A Windows Book Tracker<br>with an Android companion app</p>
+                </div>
             </div>
             
             <div id="contact">
@@ -45,9 +56,6 @@
 
         <!-- Footer Bar Div -->
         <div id="footer">
-
-        </div>
-
         <!-- Bubbling Effect -->
         <!-- Thanks to Asad Saeeduddin on StackOverflow for the demo: https://stackoverflow.com/a/13953712/9717264-->
         <div class="bubble x1"></div>
@@ -55,6 +63,6 @@
         <div class="bubble x3"></div>
         <div class="bubble x4"></div>
         <div class="bubble x5"></div>
-
+        </div>
     </body>
 </html>

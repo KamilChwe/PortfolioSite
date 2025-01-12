@@ -3,7 +3,7 @@
     Background: #071013
     Div Background: #152f38
     Text: #E9E9E9
-    Highlights: #9223c6
+    Highlights: #aa3cdd
     Subtext: #B8B8B8
 */
 
@@ -14,26 +14,21 @@ body {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-style: normal;
-    font-size: 26px;
+    font-size: 22px;
     color: #E9E9E9;
-    overflow: hidden;
 }
 
 div{
-    background-color: #152f38;
+    /*background-color: #152f38;*/
     border-radius: 8px;
-    margin: 8px;
+    margin: 4px;
+    margin-bottom: 10%;
 }
 
 /* Text Styling */
-.nameHighlight {
+.nameText {
     font-size: 64px;
     margin: 0;    
-    color: #9223c6;
-}
-
-.highlighted{
-    color: #9223c6;
 }
 
 .subtext{
@@ -44,15 +39,17 @@ div{
     color: #B8B8B8;
 }
 
+.topicText {
+    font-size: 32px;
+}
+
+.highlighted{
+    color: #aa3cdd;
+}
+
 /* Div Styling */
 /* Making an exception to inner and nav Divs for background colour*/
-#innerDiv{
-    background-color: #071013;
-}
-#navbar {
-    background-color: #071013;
-}
-#intro {
+.divBackground{
     background-color: #071013;
 }
 
@@ -61,6 +58,32 @@ div{
     width: 64px;
 
     margin-left: 15%;
+}
+
+#footer {
+    position: fixed;
+    bottom: 0;
+}
+
+/* Project Div Styling */
+#project {
+    display: inline-block;
+    background-color: #152f38;
+    width: fit-content;
+    padding: 8px;
+    text-align: center;
+}
+.projectTitle {
+    margin-top: 0;
+    font-size: 30px;
+    color: #aa3cdd;
+    text-shadow: 0px 0px 8px #152f38;
+}
+.projectDesc {
+    margin-top: 0;
+}
+.projectImage {
+    width: 460px;
 }
 
 /* Navigation Bar Styling */
@@ -81,7 +104,7 @@ div{
         transition: color 0.3s ease;
     }
     #navbar a:hover{
-        color: #9223c6;
+        color: #aa3cdd;
     }
 }
 /* Mobile Styling */
@@ -93,7 +116,6 @@ div{
 /* Desktop Styling */
 @media screen and (min-width:1024px){
     #innerDiv{
-        position: fixed;
         margin-top: 10%;
         margin-left: 15%;
     }
