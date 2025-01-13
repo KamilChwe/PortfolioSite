@@ -8,6 +8,10 @@
 */
 
 /* Defaults */
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #071013;
     /* Set the default font to be "Roboto" Medium 500 Platinum*/
@@ -72,6 +76,7 @@ div{
     width: fit-content;
     padding: 8px;
     text-align: center;
+    margin-bottom: 8px;
 }
 .projectTitle {
     margin-top: 0;
@@ -81,9 +86,14 @@ div{
 }
 .projectDesc {
     margin-top: 0;
+    color: #B8B8B8;
+    font-size: 20px;
+    font-style: italic;
 }
 .projectImage {
-    width: 460px;
+    width: 400px;
+    height: 255px;
+    box-shadow: 0px 0px 4px#B8B8B8;
 }
 
 /* Navigation Bar Styling */
