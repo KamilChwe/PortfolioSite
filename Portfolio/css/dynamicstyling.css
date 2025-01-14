@@ -51,24 +51,23 @@ div{
     color: #aa3cdd;
 }
 
-/* Div Styling */
-/* Making an exception to inner and nav Divs for background colour*/
-.divBackground{
-    background-color: #071013;
-}
-
 /* Image Styling */
-.logo {
-    width: 64px;
-
-    margin-left: 15%;
+/* Desktop Styling */
+@media screen and (min-width:1024px){
+    .logo {
+        width: 64px;
+        margin-left: 15%;
+    }
+}
+/* Mobile Styling */
+@media screen and (max-width:1000px){
+    .logo {
+        width: 96px;
+        margin-left: 46%;
+    }
 }
 
-#footer {
-    position: fixed;
-    bottom: 0;
-}
-
+/* Div Styling */
 /* Project Div Styling */
 #project {
     display: inline-block;
@@ -96,6 +95,11 @@ div{
     box-shadow: 0px 0px 4px#B8B8B8;
 }
 
+#bubbles {
+    position: fixed;
+    bottom: 0;
+}
+
 /* Navigation Bar Styling */
 /* Desktop Styling */
 @media screen and (min-width:1024px){
@@ -119,7 +123,32 @@ div{
 }
 /* Mobile Styling */
 @media screen and (max-width:1000px){
+    #navbar {
+        display: none;
+    }
 
+    /* OLD MOBILE NAVBAR
+    #navbar {
+        overflow: hidden;
+        position: fixed;
+        bottom: 0;
+        margin-bottom: 0;
+        padding: 18px 18px;
+        margin-left: 24%;
+    }
+
+    #navbar a {
+        background-color: #152f38;
+        color: #d1e3ddff; 
+        text-align: center;
+        padding: 8px;
+        text-decoration: none;
+        font-size: 42px;
+    }
+    
+    #navbar a:hover {
+        background-color: #aa3cdd;
+    }*/
 }
 
 /* Inner Div Styling */
@@ -132,7 +161,41 @@ div{
 }
 /* Mobile Styling */
 @media screen and (max-width:1000px){
+    #innerDiv{
+        text-align: center;
+    }
+}
 
+/* Contact Form Styling */
+@media screen and (min-width:1024px){
+    input[type=text] {
+        width: 80%;
+    }
+}
+/* Mobile Styling */
+@media screen and (max-width:1000px){
+
+}
+
+/* Footer Div Styling */
+/* Desktop Styling */
+@media screen and (min-width:1024px){
+    #footer {
+        display: none;
+        margin-bottom: 0;
+        font-weight: 150;
+        font-style: italic;
+        font-size: 18px;
+        color:#B8B8B8;
+        margin-right: 15%;
+        float:right;
+    }
+}
+/* Mobile Styling */
+@media screen and (max-width:1000px){
+    #footer {
+        display: none;
+    }
 }
 
 /* Animations */

@@ -1,93 +1,95 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Home Page - Kamil's Portfolio</title>
-        
-        <link rel="stylesheet" href="css/responsivestyling.css">
+        <title>Kamil's Portfolio</title>
 
+        <link rel="icon" type="image/png" href="images/logo.png">
+
+        <link rel="stylesheet" href="css/dynamicstyling.css">
+        <link rel="stylesheet" href="css/bubbles.css">
+
+        <!-- Import "Roboto" Font -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,900;1,400;1,500;1,900&display=swap" rel="stylesheet">
     </head>
+    <noscript>Looks like Javascript is disabled on your browsers, some website features may be missing or not working.</noscript>
     <body>
-        <button onclick="topFunction()" id="scrollButton" title="Scroll to the top">↑</button>
-        <!-- Header Div -->
-        <div id="header">
-            <!-- This was supposed to only slide down my name
-             but it looks nice when it slides down the whole site -->
-            <p class="titletext slidedown">Kamil Chwedura</p>
-            <p class="subtext">2024 Graduate Software Engineer</p>
-            <a href="https://www.linkedin.com/in/kamil-c-11b98319b/" title="Kamil Chwedura"><img src="images/linkedin.png" width=44px></a>
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=kchwedura@gmail.com" title="kchwedura@gmail.com"><img src="images/email.png" width=44px></a>
-            <a href="https://github.com/KamilChwe" title="KamilChwe"><img src="images/github.png" width=44px></a>
-            <a href="newindex.html">New Portfolio</a>
-        </div>
-        <!-- Sticky Top Navigation Bar Div -->
+        <!-- Navigation Bar Div -->
+        <img src="images/logo.png" class="logo">
         <div id="navbar">
             <a href="#about">About</a>
-            <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
         </div>
-        <!-- Outer Div - Contains all the main -->
-         <div id="outer">
+
+        <!-- Inner Div, contains all main information -->
+        <div id="innerDiv">
+            <div id="intro">
+                <h1 class="nameText highlighted slideRight">Kamil Chwedura
+                <a href="https://www.linkedin.com/in/kamil-c-11b98319b/" title="Kamil Chwedura"><img src="images/linkedin.png" width=24px></a>
+                <a href="https://github.com/KamilChwe" title="KamilChwe"><img src="images/github.png" width=24px></a>
+                <a href="https://twitter.com/kamildev_" title="@kamildev_"><img src="images/twitter.png" width=24px></a>
+                <a href="https://www.tiktok.com/@kamildev_" title="@kamildev_"><img src="images/tiktok.png" width=24px></a></h1>
+                <h2 class="subtext slideRight">Graduate Software Engineer</h2>
+            </div>
+        
             <div id="about">
-                <p class="titletext">About Me</p>
-                <p class="maintext">
-                I'm Kamil, a <span id="year">0</span>-year old Software Engineer and always eager to learn and expand my programming skills!<br>
-                I have always had an interest in computing and over the years that developed into a passion for programming.<br>
-                Even when I was younger I was making small little games in an engine called "Clickteam Fusion"<br>
-                small little fan-made games based on my favourite games at the time.
-                <br><br>
-                Specialising in Back-end Development, I aim to design and write clean and maintainable code with plenty of wiggle room for any future addition to a project.
+                <h1 class="topicText highlighted">About Me</h1>
+                <p>I'm a Software Engineer specialising in backend development.<br>
+                    Started programming in my High School years, creating small automations and bots using Python.
                 </p>
             </div>
-            <div id="skills">
-                <p class="titletext">Skills</p>
-                <p class="maintext">These are my most developed skills in which I have numerous year of experience due to University or personal projects
-                    <br> featuring both Back and Front end development languages/frameworks.
-                </p>
-                <p class="subtext">C# | C++ | Python | Java | HTML | CSS | JavaScript</p>
-                <p class="subtext">.NET Framework/Core | SFML | NodeJS</p>
-                <p class="subtext">Unity | Unreal Engine | Qt | WPF</p>
-            </div>
-            <p class="titletext">Projects</p>
-            <p class="maintext"></p>
-            <p><i>Recent Projects:</i></p>
+
             <div id="projects">
-                <div id="showcase">
-                    <p class="projecttitle"><a href="https://github.com/KamilChwe/GroceryHelper">GroceryHelper</a></p>
-                    <div id="images">
-                        <img class="slideshow" src="images/ggtempimage.png" width=260px>
-                    </div>
-                    <p class="projectsubtext">NodeJS based<br>Smart Dynamic Shopping List</p>
-                    <p class="projectsubtext"><i><br>Status: In Development</i></p>
+                <h1 class="topicText highlighted">Projects</h1>
+                <div id="project">
+                    <img src="images/ggtempimage.png" class="projectImage">
+                    <p class="projectTitle">Grocery Guide</p>
+                    <p class="projectDesc">A multi-platform dynamic <br>shopping list developed in NodeJS<br>Status: In Development</p>
                 </div>
-                <div id="showcase">
-                    <p class="projecttitle"><a href="">ShelfSync</a></p>
-                    <div id="images">
-                        <img class="slideshow" src="images/noimage.png" width=260px>
-                    </div>
-                    <p class="projectsubtext">C#/Java Based<br>PC/Mobile syncing physical book assistant</p>
-                    <p class="projectsubtext"><i><br>Status: Finished
-                    <p class="projectsubtext"><i>Completed in: 2024</i></p>
+                <div id="project">
+                    <img src="images/ShelfSyncB.png" class="projectImage">
+                    <p class="projectTitle">ShelfSync</p>
+                    <p class="projectDesc">A Windows and Android Book Tracker<br>Developed in C# and Java/Kotlin<br>Status: Finished</p>
                 </div>
+                <div id="project">
+                    <img src="images/dionysusbot.png" class="projectImage">
+                    <p class="projectTitle">Discord Bot - Dionysus</p>
+                    <p class="projectDesc">A Discord Mini-Game Bot<br>written in Python<br>Status: In Development</p>
+                </div>
+                <div id="project">
+                    <img src="images/noimage.png" class="projectImage">
+                    <p class="projectTitle">Project: Sales Assistant</p>
+                    <p class="projectDesc">A game about the chaotic nature of retail<br>Developed in Unity Game Engine<br>Status: Planning Phase</p>
+                </div>
+                <a href="html/projects.html"><p class="subtext">More projects</p></a>
             </div>
             
-                <p><i>Older Projects:</i>
-                <br>
-                <i>These are projects which I have worked in my youth, thus are simpler in nature</i></p>
-            <div id="projects">
-                <div id="showcase">
-                    <p class="projecttitle"><a href="https://gamejolt.com/@CryingArchive/games">Fan-made games</a></p>
-                    <div id="images">
-                        <img class="slideshow" src="images/noimage.png" width=260px>
-                    </div>
-                    <p class="projectsubtext">Clickteam Fusion Video Games<br>Games based on an indie game "Undertale"</p>
-                    <p class="projectsubtext"><i><br>Status: Finished
-                    <p class="projectsubtext"><i>Completed in: 2016</i></p>
-                </div>
+            <!-- Contact Form -->
+            <div id="contact">
+                <h1 class="topicText highlighted">Contact</h1>
+                <form>
+                    <input type="text" placeholder="Email" id="email"/>
+                    <input type="text" placeholder="Subject" id="subject"/>
+                    <input type="text" placeholder="Message" id="message"/>
+                    <input type="submit" value="Send">
+                </form>
             </div>
-         </div>
+        </div>
+
+        <!-- Footer Bar Div -->
+        <div id="footer">
+        <p>Website written in pure HTML, CSS, and JS.<br>Hosted by NameCheap.</p>
+        </div>
+        <div  id="bubbles">
+            <!-- Bubbling Effect -->
+            <!-- Thanks to Asad Saeeduddin on StackOverflow for the demo: https://stackoverflow.com/a/13953712/9717264-->
+            <div class="bubble x1"></div>
+            <div class="bubble x2"></div>
+            <div class="bubble x3"></div>
+            <div class="bubble x4"></div>
+            <div class="bubble x5"></div>
+        </div>
     </body>
-    <script src="js/functions.js"></script>
 </html>
