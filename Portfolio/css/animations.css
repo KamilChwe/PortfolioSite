@@ -1,0 +1,27 @@
+/* Animations */
+.slideRight {
+    animation: slideright 1.25s;
+}
+@keyframes slideright {
+    from{
+        margin-left: -200%;
+        left: 300%;
+    }
+    to {
+        margin-left: 0%;
+        left: 100%;
+    }
+}
+.slideLeft {
+    animation: slideleft 1.25s;
+}
+@keyframes slideleft {
+    from{
+        margin-left: 400%;
+        left: 300%;
+    }
+    to {
+        margin-left: 0%;
+        left: 100%;
+    }
+}

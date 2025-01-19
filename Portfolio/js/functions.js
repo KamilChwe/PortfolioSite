@@ -9,26 +9,3 @@ function yearsSince(date){
 // Sets the years since my birth
 document.querySelector("#year").textContent = yearsSince("2002-12-07");
 
-// Scroll to Top Functionality
-let scrollButton = document.getElementById("scrollButton");
-
-// On each scroll check the progress of the page scroll
-window.onscroll = function(){
-    scrollFunction();
-};
-
-// Shows the "To the top" button after a certain threshold
-function scrollFunction(){
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        scrollButton.style.display = "block";
-    }
-    else{
-        scrollButton.style.display = "none";
-    }
-}
-
-// A function that resets the scroll progress, effectively taking the user back to the top
-function topFunction(){
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-}

@@ -167,21 +167,85 @@ div{
 }
 
 /* Contact Form Styling */
+/* Desktop Styling */
 @media screen and (min-width:1024px){
-    input[type=text] {
+    form{
         width: 80%;
+    }
+    input[type=text] {
+        width: 100%;
+        background-color: #071013;
+        border: none;
+        border-bottom: 2px solid #aa3cdd;
+        color: #E9E9E9;
+        padding: 8px;
+    }
+    textarea{
+        width: 100%;
+        background-color: #071013;
+        border: none;
+        border-bottom: 2px solid #aa3cdd;
+        resize: none;
+        height: 125px;
+        color: #E9E9E9;
+    }
+    input[type=submit]{
+        background-color: #152f38;
+        color: #E9E9E9;
+        border: #071013;
+        border-radius: 16px;
+        padding: 16px 20px;
+        cursor: pointer;
+    }
+    input[type=submit]:hover{
+        background-color: #aa3cdd;
+        cursor: pointer;
     }
 }
 /* Mobile Styling */
 @media screen and (max-width:1000px){
-
+    form{
+        width: 50%;
+        margin-left: 25%;
+    }
+    input[type=text] {
+        margin: 8px;
+        font-size: 32px;
+        width: 100%;
+        background-color: #071013;
+        border: none;
+        border-bottom: 2px solid #aa3cdd;
+        color: #E9E9E9;
+        padding: 8px;
+    }
+    textarea{
+        font-size: 32px;
+        width: 100%;
+        background-color: #071013;
+        border: none;
+        border-bottom: 2px solid #aa3cdd;
+        resize: none;
+        height: 255px;
+        color: #E9E9E9;
+    }
+    input[type=submit]{
+        margin: 8px;
+        font-size: 42px;
+        background-color: #152f38;
+        color: #E9E9E9;
+        border: #071013;
+        border-radius: 16px;
+        padding: 16px 20px;
+    }
+    input[type=submit]:hover{
+        background-color: #aa3cdd;
+    }
 }
 
 /* Footer Div Styling */
 /* Desktop Styling */
 @media screen and (min-width:1024px){
     #footer {
-        display: none;
         margin-bottom: 0;
         font-weight: 150;
         font-style: italic;
@@ -195,33 +259,5 @@ div{
 @media screen and (max-width:1000px){
     #footer {
         display: none;
-    }
-}
-
-/* Animations */
-.slideRight {
-    animation: slideright 1.25s;
-}
-@keyframes slideright {
-    from{
-        margin-left: -200%;
-        left: 300%;
-    }
-    to {
-        margin-left: 0%;
-        left: 100%;
-    }
-}
-.slideLeft {
-    animation: slideleft 1.25s;
-}
-@keyframes slideleft {
-    from{
-        margin-left: 400%;
-        left: 300%;
-    }
-    to {
-        margin-left: 0%;
-        left: 100%;
     }
 }
