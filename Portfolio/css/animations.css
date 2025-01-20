@@ -25,3 +25,29 @@
         left: 100%;
     }
 }
+.slideUp {
+    animation: slideup 1.25s;
+}
+@keyframes slideup {
+    from{
+        margin-top: 200%;
+        top: 300%;
+    }
+    to {
+        margin-top: 0%;
+        top: 100%;
+    }
+}
+.slideBottom {
+    animation: slidebottom 1.25s;
+}
+@keyframes slidebottom {
+    from{
+        margin-top: -200%;
+        top: 300%;
+    }
+    to {
+        margin-top: 0%;
+        top: 100%;
+    }
+}

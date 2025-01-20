@@ -7,7 +7,7 @@
 
         <link rel="stylesheet" href="css/dynamicstyling.css">
         <link rel="stylesheet" href="css/bubbles.css">
-        <link rel="stylesheet" href="css/animations.css.css">
+        <link rel="stylesheet" href="css/animations.css">
 
         <!-- Import "Roboto" Font -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,9 +17,10 @@
     <noscript>Looks like Javascript is disabled on your browsers, some website features may be missing or not working.</noscript>
     <body>
         <!-- Navigation Bar Div -->
-        <img src="images/logo.png" class="logo">
-        <div id="navbar">
+        <img src="images/logo.png" class="logo slideRight">
+        <div id="navbar" class="slideBottom">
             <a href="#about">About</a>
+            <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
         </div>
@@ -35,11 +36,41 @@
                 <h2 class="subtext slideRight">Graduate Software Engineer</h2>
             </div>
         
-            <div id="about">
+            <div id="about" class="slideUp">
                 <h1 class="topicText highlighted">About Me</h1>
                 <p>I'm a Software Engineer specialising in backend development.<br>
-                    Started programming in my High School years, creating small automations and bots using Python.
+                    Started programming in my High School years (2014), creating small automations and bots using Python.<br><br>
+                    
+                    Always had an intense passion for programming and thus went into college and university to<br>
+                    professionaly pursue a career in Software, ever since I have been creating: Games, Mobile Apps, Web Apps,<br>
+                    and automation systems to simplify my life. Primarily writing in C# and C++.
                 </p>
+            </div>
+
+            <div id="skills">
+                <h1 class="topicText highlighted">Skills</h1>
+                <h3 class="">Back End</h3>
+                <div id="skill">
+                    <img src="images/python.png" class="skillImage">
+                    <p class="skillTitle">Python</p>
+                    <p class="skillSubtext">My first programming language, created automations and bots in it.<br><br>Experience: 6 Years</p>
+                </div>
+                <div id="skill">
+                    <img src="images/cs.png" class="skillImage">
+                    <p class="skillTitle">C#</p>
+                    <p class="skillSubtext">My most comfortable language, created games, WPF apps, and more in it.<br><br>Experience: 6 Years</p>
+                </div>
+                <div id="skill">
+                    <img src="images/cpp.png" class="skillImage">
+                    <p class="skillTitle">C++</p>
+                    <p class="skillSubtext">Recently a primary focus for me, creating complex solutions in it.<br><br>Experience: 3 Years</p>
+                </div>
+                <div id="skill">
+                    <img src="images/java.png" class="skillImage">
+                    <p class="skillTitle">Java</p>
+                    <p class="skillSubtext">Similar to C# and thus decided to learn it, I can easily understand it.<br><br>Experience: 2 Years</p>
+                </div>
+                <h3 class="">Front End</h3>
             </div>
 
             <div id="projects">
@@ -64,7 +95,7 @@
                     <p class="projectTitle">Project: Sales Assistant</p>
                     <p class="projectDesc">A game about the chaotic nature of retail<br>Developed in Unity Game Engine<br>Status: Planning Phase</p>
                 </div>
-                <a href="html/projects.html"><p class="subtext">More projects</p></a>
+                <p class="subtext">More projects can be found on GitHub</p>
             </div>
             
             <!-- Contact Form -->
