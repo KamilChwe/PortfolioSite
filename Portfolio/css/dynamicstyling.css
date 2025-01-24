@@ -102,6 +102,9 @@ div{
 
 /* Skills Styling */
 /* Desktop Styling */
+#skills{
+    display: flex;
+}
 #skill {
     display: inline-block;
     background-color: #152f38;

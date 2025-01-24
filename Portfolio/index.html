@@ -1,10 +1,15 @@
+<!--
+    Portfolio website created by Kamil Chwedura
+-->
+
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Kamil's Portfolio</title>
+        <title>Kamil Chwedura - Portfolio</title>
 
         <link rel="icon" type="image/png" href="images/logo.png">
 
+        <!-- Import all the required CSS -->
         <link rel="stylesheet" href="css/dynamicstyling.css">
         <link rel="stylesheet" href="css/bubbles.css">
         <link rel="stylesheet" href="css/animations.css">
@@ -27,6 +32,7 @@
 
         <!-- Inner Div, contains all main information -->
         <div id="innerDiv">
+            <!-- Intro -->
             <div id="intro">
                 <h1 class="nameText highlighted slideRight">Kamil Chwedura  
                 <a href="https://www.linkedin.com/in/kamil-c-11b98319b/" target="_blank" title="Kamil Chwedura"><img src="images/linkedin.png" width=24px></a>
@@ -36,9 +42,10 @@
                 <h2 class="subtext slideRight">Graduate Software Engineer</h2>
             </div>
         
+            <!-- About Section -->
             <div id="about" class="slideUp">
                 <h1 class="topicText highlighted">About Me</h1>
-                <p>I'm a Software Engineer specialising in backend development.<br>
+                <p>I'm a <span id="year">0</span>-year old Software Engineer specialising in backend development.<br>
                     Started programming in my High School years (2014), creating small automations and bots using Python.<br><br>
                     
                     Always had an intense passion for programming and thus went into college and university to<br>
@@ -47,9 +54,10 @@
                 </p>
             </div>
 
+            <!-- Projects Div -->
+            <h1 class="topicText highlighted">Skills</h1>
+            <h3 class="">Back End</h3>
             <div id="skills">
-                <h1 class="topicText highlighted">Skills</h1>
-                <h3 class="">Back End</h3>
                 <div id="skill">
                     <img src="images/python.png" class="skillImage">
                     <p class="skillTitle">Python</p>
@@ -70,9 +78,22 @@
                     <p class="skillTitle">Java</p>
                     <p class="skillSubtext">Similar to C# and thus decided to learn it, I can easily understand it.<br><br>Experience: 2 Years</p>
                 </div>
-                <h3 class="">Front End</h3>
+            </div>
+            <h3 class="">Front End</h3>
+            <div id="skills">
+                <div id="skill">
+                    <img src="images/htmlcssjs.png" class="skillImage">
+                    <p class="skillTitle">HTML, CSS, JS</p>
+                    <p class="skillSubtext">First ever exposure to creating anything on a computer, learned it in high school.<br><br>Experience: 7-8 Years</p>
+                </div>
+                <div id="skill">
+                    <img src="images/kotlin.png" class="skillImage">
+                    <p class="skillTitle">Kotlin</p>
+                    <p class="skillSubtext">Utilised Kotlin to produce Android applications, still learning the intricacies.<br><br>Experience: 1 Year</p>
+                </div>
             </div>
 
+            <!-- Projects Section -->
             <div id="projects">
                 <h1 class="topicText highlighted">Projects</h1>
                 <div id="project">
@@ -101,12 +122,7 @@
             <!-- Contact Form -->
             <div id="contact">
                 <h1 class="topicText highlighted">Contact</h1>
-                <form>
-                    <input type="text" placeholder="Email" id="email"/>
-                    <input type="text" placeholder="Subject" id="subject"/>
-                    <textarea placeholder="Your message Here!" id="message"></textarea>
-                    <input type="submit" value="Send">
-                </form>
+                <p><i>You can contact me via LinkedIn, Twitter, and/or via my <a href="mailto:kchwedura@gmail.com" class="highlighted" title="kchwedura@gmail.com">EMail</a></i></p>
             </div>
         </div>
 
@@ -114,9 +130,10 @@
         <div id="footer">
         <p>Website written in pure HTML, CSS, and JS.<br>Hosted by NameCheap.</p>
         </div>
+
+        <!-- Bubbling Effect -->
+        <!-- Thanks to Asad Saeeduddin on StackOverflow for the demo: https://stackoverflow.com/a/13953712/9717264-->
         <div  id="bubbles">
-            <!-- Bubbling Effect -->
-            <!-- Thanks to Asad Saeeduddin on StackOverflow for the demo: https://stackoverflow.com/a/13953712/9717264-->
             <div class="bubble x1"></div>
             <div class="bubble x2"></div>
             <div class="bubble x3"></div>
@@ -124,4 +141,8 @@
             <div class="bubble x5"></div>
         </div>
     </body>
+    <!-- Import the JavaScript functionality 
+        This is at the bottom to allow the page to fully load before any functionality is enabled 
+    -->
+    <script src="js/functions.js"></script>
 </html>
