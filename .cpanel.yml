@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/kamifths/public_html/
+    - /bin/cp -R repositories/PortfolioSite/Portfolio/* $DEPLOYPATH
