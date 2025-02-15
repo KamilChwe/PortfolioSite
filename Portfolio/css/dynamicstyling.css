@@ -29,10 +29,22 @@ div{
     margin-bottom: 10%;
 }
 
+@media screen and (min-width:1024px){
+    h1{
+        display: inline;
+    }
+}
+/* Mobile Styling */
+@media screen and (max-width:1000px){
+    h1{
+        display: block;
+    }
+}
+
 /* Text Styling */
 .nameText {
     font-size: 64px;
-    margin: 0;    
+    margin: 0;
 }
 
 .subtext{
@@ -58,12 +70,19 @@ div{
         width: 64px;
         margin-left: 15%;
     }
+    .icon{
+        width: 26px;
+    }
 }
 /* Mobile Styling */
 @media screen and (max-width:1000px){
     .logo {
         width: 96px;
         margin-left: 46%;
+    }
+    .icon{
+        width: 48px;
+        margin-left: 2.5%;
     }
 }
 
