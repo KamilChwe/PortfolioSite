@@ -9,3 +9,10 @@ function yearsSince(date){
 // Sets the years since my birth
 document.querySelector("#year").textContent = yearsSince("2002-12-07");
 
+// Sets the years of experiences
+document.querySelector("#py").textContent = yearsSince("2019-01-01");
+document.querySelector("#cs").textContent = yearsSince("2019-01-01");
+document.querySelector("#cpp").textContent = yearsSince("2022-01-01");
+document.querySelector("#jav").textContent = yearsSince("2022-01-01");
+document.querySelector("#web").textContent = yearsSince("2017-01-01");
+document.querySelector("#kot").textContent = yearsSince("2024-01-01");
